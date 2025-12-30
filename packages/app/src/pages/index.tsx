@@ -1,3 +1,4 @@
+import { INITIAL_YAML } from '@yaml/constants/app';
 import jsonSchemaGenerator from 'json-schema-generator';
 import { NextPage } from 'next';
 import { useMemo, useState } from 'react';
@@ -14,16 +15,6 @@ const copyToClipboard = async (text: string) => {
     alert('Failed to Copy to Clipboard');
   }
 };
-
-const INITIAL_YAML: string = `string: string
-
-number: 1
-
-boolean: true
-
-object:
-  key: value
-`;
 
 const HomePage: NextPage = () => {
   const [theme, setTheme] = useState<string>(() => {

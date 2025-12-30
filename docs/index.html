@@ -1,50 +1,642 @@
-<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charSet="utf-8" data-next-head=""/><meta name="viewport" content="width=device-width" data-next-head=""/><title data-next-head="">YAML</title><link rel="preload" href="/yaml/_next/static/media/caa3a2e1cccd8315-s.p.853070df.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-next-font="size-adjust"/><link rel="preload" href="/yaml/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-next-font="size-adjust"/><link rel="preload" href="/yaml/_next/static/chunks/a0532ba6ace77e1f.css" as="style"/><link rel="stylesheet" href="/yaml/_next/static/chunks/a0532ba6ace77e1f.css" data-n-g=""/><noscript data-n-css=""></noscript><script src="/yaml/_next/static/chunks/78482871658a413e.js" defer=""></script><script src="/yaml/_next/static/chunks/18305af525905559.js" defer=""></script><script src="/yaml/_next/static/chunks/turbopack-953c0891689b7524.js" defer=""></script><script src="/yaml/_next/static/chunks/0b2f0aa4bd411da4.js" defer=""></script><script src="/yaml/_next/static/chunks/734a75c431a8c108.js" defer=""></script><script src="/yaml/_next/static/chunks/turbopack-3e527623ac2b50fb.js" defer=""></script><script src="/yaml/_next/static/7uvCYIPorIQr30YPQbbYz/_ssgManifest.js" defer=""></script><script src="/yaml/_next/static/7uvCYIPorIQr30YPQbbYz/_buildManifest.js" defer=""></script></head><body class="antialiased"><div id="__next"><div class="geist_67d76b20-module__yOMf8W__className geist_mono_66039167-module__O0reuq__className"><div class="flex h-screen w-screen flex-col overflow-hidden"><nav class="border-base-300 border-b px-4 py-4 md:px-8"><div class="flex items-center justify-between"><span class="font-bold">YAML</span><button class="btn btn-sm btn-primary">🌙 Dark</button></div></nav><div class="divide-base-300 flex h-full grow flex-col divide-y"><div class="px-4 py-4 md:px-8"><input id="schema-url" placeholder="Schema URL" class="input w-full focus:outline-none" name="schema-url" value=""/></div><div class="divide-base-300 grid h-full grid-cols-1 grid-rows-3 gap-y-4 divide-x overflow-hidden rounded-2xl px-4 py-4 md:grid-cols-3 md:grid-rows-1 md:gap-x-4 md:px-8"><div class="relative row-span-1 md:col-span-1"><button type="button" class="btn btn-sm absolute top-2 right-2 z-10">📋</button><textarea id="yaml" name="yaml" placeholder="YAML" class="textarea h-full w-full focus:outline-none">string: string
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charSet="utf-8" data-next-head=""/><meta name="viewport" content="width=device-width" data-next-head=""/><title data-next-head="">YAML</title><link rel="preload" href="/yaml/_next/static/media/caa3a2e1cccd8315-s.p.853070df.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-next-font="size-adjust"/><link rel="preload" href="/yaml/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-next-font="size-adjust"/><link rel="preload" href="/yaml/_next/static/chunks/4afeef08fbdc054c.css" as="style"/><link rel="stylesheet" href="/yaml/_next/static/chunks/4afeef08fbdc054c.css" data-n-g=""/><noscript data-n-css=""></noscript><script src="/yaml/_next/static/chunks/78482871658a413e.js" defer=""></script><script src="/yaml/_next/static/chunks/18305af525905559.js" defer=""></script><script src="/yaml/_next/static/chunks/turbopack-abbe56227b0364f3.js" defer=""></script><script src="/yaml/_next/static/chunks/0b2f0aa4bd411da4.js" defer=""></script><script src="/yaml/_next/static/chunks/355ea97b19aa9dcf.js" defer=""></script><script src="/yaml/_next/static/chunks/turbopack-880ce318b5cef5b3.js" defer=""></script><script src="/yaml/_next/static/G7CMhe7YxfOsOV7CAKWhk/_ssgManifest.js" defer=""></script><script src="/yaml/_next/static/G7CMhe7YxfOsOV7CAKWhk/_buildManifest.js" defer=""></script></head><body class="antialiased"><div id="__next"><div class="geist_67d76b20-module__yOMf8W__className geist_mono_66039167-module__O0reuq__className"><div class="flex h-screen w-screen flex-col overflow-hidden"><nav class="border-base-300 border-b px-4 py-4 md:px-8"><div class="flex items-center justify-between"><span class="font-bold">YAML</span><button class="btn btn-sm btn-primary">🌙 Dark</button></div></nav><div class="divide-base-300 flex h-full grow flex-col divide-y"><div class="px-4 py-4 md:px-8"><input id="schema-url" placeholder="Schema URL" class="input w-full focus:outline-none" name="schema-url" value=""/></div><div class="divide-base-300 grid h-full grid-cols-1 grid-rows-3 gap-y-4 divide-x overflow-hidden rounded-2xl px-4 py-4 md:grid-cols-3 md:grid-rows-1 md:gap-x-4 md:px-8"><div class="relative row-span-1 md:col-span-1"><button type="button" class="btn btn-sm absolute top-2 right-2 z-10">📋</button><textarea id="yaml" name="yaml" placeholder="YAML" class="textarea h-full w-full focus:outline-none">%YAML 1.2
+---
+YAML: YAML Ain&#x27;t Markup Language™
 
-number: 1
+What It Is:
+  YAML is a human-friendly data serialization
+  language for all programming languages.
 
-boolean: true
+YAML Resources:
+  YAML Specifications:
+  - YAML 1.2:
+    - Revision 1.2.2      # Oct 1, 2021 *New*
+    - Revision 1.2.1      # Oct 1, 2009
+    - Revision 1.2.0      # Jul 21, 2009
+  - YAML 1.1
+  - YAML 1.0
 
-object:
-  key: value
+  YAML Matrix Chat:  &#x27;#chat:yaml.io&#x27;     # Our New Group Chat Room!
+  YAML IRC Channel:  libera.chat#yaml    # The old chat
+  YAML News:         twitter.com/yamlnews
+  YAML Mailing List: yaml-core           # Obsolete, but historical
+
+  YAML on GitHub:                        # github.com/yaml/
+    YAML Specs:        yaml-spec/
+    YAML 1.2 Grammar:  yaml-grammar/
+    YAML Test Suite:   yaml-test-suite/
+    YAML Issues:       issues/
+
+  YAML Reference Parsers:
+  - Generated Reference Parsers
+  - YPaste Interactive Parser
+
+  YAML Test Matrix:   matrix.yaml.io
+
+YAML Frameworks and Tools:
+  C/C++:
+  - libfyaml      # &quot;C&quot; YAML 1.2 processor (YTS)
+  - libyaml       # &quot;C&quot; Fast YAML 1.1 (YTS)
+  - libcyaml      # YAML de/serialization of C data (using libyaml)
+  - yaml-cpp      # C++ YAML 1.2 implementation
+
+  Crystal:
+  - YAML          # YAML 1.1 from the standard library
+
+  C#/.NET:
+  - YamlDotNet    # YAML 1.1/(1.2) library + serialization (YTS)
+  - yaml-net      # YAML 1.1 library
+
+  D:
+  - D-YAML        # YAML 1.1 library w/ official community support (YTS)
+
+  Dart:
+  - yaml          # YAML package for Dart
+
+  Delphi:
+  - Neslib.Yaml   # YAML 1.1 Delphi binding to libyaml (YTS)
+
+  Elixir:
+  - yaml-elixir   # YAML support for the Elixir language
+
+  Erlang:
+  - yamerl        # YAML support for the Erlang language
+
+  Golang:
+  - Go-yaml       # YAML support for the Go language
+  - Go-gypsy      # Simplified YAML parser written in Go
+  - goccy/go-yaml # YAML 1.2 implementation in pure Go
+
+  Haskell:
+  - HsYAML         # YAML 1.2 implementation in pure Haskell (YTS)
+  - YamlReference  # Haskell 1.2 reference parser
+  - yaml           # YAML 1.1 Haskell framework (based on libyaml)
+
+  Java:
+  - SnakeYAML Engine  # Java 8+ / YAML 1.2
+  - SnakeYAML         # Java 5 / YAML 1.1
+  - YamlBeans         # To/from JavaBeans. YAML 1.0/1.1
+  - eo-yaml           # YAML 1.2 for Java 8. Packaged as a Module (Java 9+)
+  - Chronicle-Wire    # Java Implementation
+
+  JavaScript:
+  - yaml          # JavaScript parser/stringifier (YAML 1.2, 1.1) (YTS)
+  - js-yaml       # Native PyYAML port to JavaScript (Demo)
+
+  Nim:
+  - NimYAML       # YAML 1.2 implementation in pure Nim (YTS)
+
+  OCaml:
+  - ocaml-yaml    # YAML 1.1/1.2 via libyaml bindings
+  - ocaml-syck    # YAML 1.0 via syck bindings
+
+  Perl Modules:
+  - YAML          # Pure Perl YAML 1.0 Module
+  - YAML::XS      # Binding to libyaml
+  - YAML::Syck    # Binding to libsyck
+  - YAML::Tiny    # A small YAML subset module
+  - YAML::PP      # A YAML 1.2/1.1 processor (YTS)
+
+  PHP:
+  - The Yaml Component  # Symfony Yaml Component (YAML 1.2)
+  - php-yaml      # libyaml bindings (YAML 1.1)
+  - syck          # syck bindings (YAML 1.0)
+  - spyc          # yaml loader/dumper (YAML 1.?)
+
+  Python:
+  - PyYAML        # YAML 1.1, pure python and libyaml binding
+  - ruamel.yaml   # YAML 1.2, update of PyYAML; comments round-trip
+  - PySyck        # YAML 1.0, syck binding
+  - strictyaml    # Restricted YAML subset
+
+  R:
+  - R YAML        # libyaml wrapper
+
+  Raku:
+  - YAMLish       # Port of YAMLish to Raku
+  - YAML::Parser::LibYAML  # LibYAML wrapper
+
+  Ruby:
+  - psych         # libyaml wrapper (in Ruby core for 1.9.2)
+  - RbYaml        # YAML 1.1 (PyYAML Port)
+  - yaml4r        # YAML 1.0, standard library syck binding
+
+  Rust:
+  - yaml-rust     # YAML 1.2 implementation in pure Rust
+  - serde-yaml    # YAML de/serialization of structs
+
+  Shell:
+  - parse_yaml    # Simple YAML parser for Bash using sed and awk
+  - shyaml        # Read YAML files - jq style
+
+  Swift:
+  - Yams          # libyaml wrapper
+
+  Others:
+  - yamlvim       # YAML dumper/emitter in pure vimscript
+
+Related Projects:
+  - Rx            # Multi-Language Schemata Tool for JSON/YAML
+  - Kwalify       # Ruby Schemata Tool for JSON/YAML
+  - pyKwalify     # Python Schemata Tool for JSON/YAML
+  - yatools.net   # Visual Studio editor for YAML
+  - JSON          # Official JSON Website
+  - Pygments      # Python language Syntax Colorizer /w YAML support
+  - yamllint      # YAML Linter based on PyYAML
+  - YAML Diff     # Semantically compare two YAML documents
+  - JSON Schema   # YAML-compliant JSON standard for data validation
+
+# Edit This Website
+...
 </textarea></div><div class="relative row-span-1 md:col-span-1"><button type="button" class="btn btn-sm absolute top-2 right-2 z-10">📋</button><textarea id="json" name="json" placeholder="JSON" class="textarea h-full w-full focus:outline-none" readOnly="">{
-  &quot;string&quot;: &quot;string&quot;,
-  &quot;number&quot;: 1,
-  &quot;boolean&quot;: true,
-  &quot;object&quot;: {
-    &quot;key&quot;: &quot;value&quot;
-  }
+  &quot;YAML&quot;: &quot;YAML Ain&#x27;t Markup Language™&quot;,
+  &quot;What It Is&quot;: &quot;YAML is a human-friendly data serialization language for all programming languages.&quot;,
+  &quot;YAML Resources&quot;: {
+    &quot;YAML Specifications&quot;: [
+      {
+        &quot;YAML 1.2&quot;: [
+          &quot;Revision 1.2.2&quot;,
+          &quot;Revision 1.2.1&quot;,
+          &quot;Revision 1.2.0&quot;
+        ]
+      },
+      &quot;YAML 1.1&quot;,
+      &quot;YAML 1.0&quot;
+    ],
+    &quot;YAML Matrix Chat&quot;: &quot;#chat:yaml.io&quot;,
+    &quot;YAML IRC Channel&quot;: &quot;libera.chat#yaml&quot;,
+    &quot;YAML News&quot;: &quot;twitter.com/yamlnews&quot;,
+    &quot;YAML Mailing List&quot;: &quot;yaml-core&quot;,
+    &quot;YAML on GitHub&quot;: {
+      &quot;YAML Specs&quot;: &quot;yaml-spec/&quot;,
+      &quot;YAML 1.2 Grammar&quot;: &quot;yaml-grammar/&quot;,
+      &quot;YAML Test Suite&quot;: &quot;yaml-test-suite/&quot;,
+      &quot;YAML Issues&quot;: &quot;issues/&quot;
+    },
+    &quot;YAML Reference Parsers&quot;: [
+      &quot;Generated Reference Parsers&quot;,
+      &quot;YPaste Interactive Parser&quot;
+    ],
+    &quot;YAML Test Matrix&quot;: &quot;matrix.yaml.io&quot;
+  },
+  &quot;YAML Frameworks and Tools&quot;: {
+    &quot;C/C++&quot;: [
+      &quot;libfyaml&quot;,
+      &quot;libyaml&quot;,
+      &quot;libcyaml&quot;,
+      &quot;yaml-cpp&quot;
+    ],
+    &quot;Crystal&quot;: [
+      &quot;YAML&quot;
+    ],
+    &quot;C#/.NET&quot;: [
+      &quot;YamlDotNet&quot;,
+      &quot;yaml-net&quot;
+    ],
+    &quot;D&quot;: [
+      &quot;D-YAML&quot;
+    ],
+    &quot;Dart&quot;: [
+      &quot;yaml&quot;
+    ],
+    &quot;Delphi&quot;: [
+      &quot;Neslib.Yaml&quot;
+    ],
+    &quot;Elixir&quot;: [
+      &quot;yaml-elixir&quot;
+    ],
+    &quot;Erlang&quot;: [
+      &quot;yamerl&quot;
+    ],
+    &quot;Golang&quot;: [
+      &quot;Go-yaml&quot;,
+      &quot;Go-gypsy&quot;,
+      &quot;goccy/go-yaml&quot;
+    ],
+    &quot;Haskell&quot;: [
+      &quot;HsYAML&quot;,
+      &quot;YamlReference&quot;,
+      &quot;yaml&quot;
+    ],
+    &quot;Java&quot;: [
+      &quot;SnakeYAML Engine&quot;,
+      &quot;SnakeYAML&quot;,
+      &quot;YamlBeans&quot;,
+      &quot;eo-yaml&quot;,
+      &quot;Chronicle-Wire&quot;
+    ],
+    &quot;JavaScript&quot;: [
+      &quot;yaml&quot;,
+      &quot;js-yaml&quot;
+    ],
+    &quot;Nim&quot;: [
+      &quot;NimYAML&quot;
+    ],
+    &quot;OCaml&quot;: [
+      &quot;ocaml-yaml&quot;,
+      &quot;ocaml-syck&quot;
+    ],
+    &quot;Perl Modules&quot;: [
+      &quot;YAML&quot;,
+      &quot;YAML::XS&quot;,
+      &quot;YAML::Syck&quot;,
+      &quot;YAML::Tiny&quot;,
+      &quot;YAML::PP&quot;
+    ],
+    &quot;PHP&quot;: [
+      &quot;The Yaml Component&quot;,
+      &quot;php-yaml&quot;,
+      &quot;syck&quot;,
+      &quot;spyc&quot;
+    ],
+    &quot;Python&quot;: [
+      &quot;PyYAML&quot;,
+      &quot;ruamel.yaml&quot;,
+      &quot;PySyck&quot;,
+      &quot;strictyaml&quot;
+    ],
+    &quot;R&quot;: [
+      &quot;R YAML&quot;
+    ],
+    &quot;Raku&quot;: [
+      &quot;YAMLish&quot;,
+      &quot;YAML::Parser::LibYAML&quot;
+    ],
+    &quot;Ruby&quot;: [
+      &quot;psych&quot;,
+      &quot;RbYaml&quot;,
+      &quot;yaml4r&quot;
+    ],
+    &quot;Rust&quot;: [
+      &quot;yaml-rust&quot;,
+      &quot;serde-yaml&quot;
+    ],
+    &quot;Shell&quot;: [
+      &quot;parse_yaml&quot;,
+      &quot;shyaml&quot;
+    ],
+    &quot;Swift&quot;: [
+      &quot;Yams&quot;
+    ],
+    &quot;Others&quot;: [
+      &quot;yamlvim&quot;
+    ]
+  },
+  &quot;Related Projects&quot;: [
+    &quot;Rx&quot;,
+    &quot;Kwalify&quot;,
+    &quot;pyKwalify&quot;,
+    &quot;yatools.net&quot;,
+    &quot;JSON&quot;,
+    &quot;Pygments&quot;,
+    &quot;yamllint&quot;,
+    &quot;YAML Diff&quot;,
+    &quot;JSON Schema&quot;
+  ]
 }</textarea></div><div class="relative row-span-1 md:col-span-1"><button type="button" class="btn btn-sm absolute top-2 right-2 z-10">📋</button><textarea id="json-schema" name="json-schema" placeholder="JSON Schema" class="textarea h-full w-full focus:outline-none" readOnly="">{
   &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
   &quot;description&quot;: &quot;&quot;,
   &quot;type&quot;: &quot;object&quot;,
   &quot;properties&quot;: {
-    &quot;string&quot;: {
+    &quot;YAML&quot;: {
       &quot;type&quot;: &quot;string&quot;,
       &quot;minLength&quot;: 1
     },
-    &quot;number&quot;: {
-      &quot;type&quot;: &quot;number&quot;
+    &quot;What It Is&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;minLength&quot;: 1
     },
-    &quot;boolean&quot;: {
-      &quot;type&quot;: &quot;boolean&quot;
-    },
-    &quot;object&quot;: {
+    &quot;YAML Resources&quot;: {
       &quot;type&quot;: &quot;object&quot;,
       &quot;properties&quot;: {
-        &quot;key&quot;: {
+        &quot;YAML Specifications&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;uniqueItems&quot;: true,
+          &quot;minItems&quot;: 1,
+          &quot;items&quot;: {
+            &quot;required&quot;: [
+              &quot;0&quot;,
+              &quot;1&quot;,
+              &quot;2&quot;,
+              &quot;3&quot;,
+              &quot;4&quot;,
+              &quot;5&quot;,
+              &quot;6&quot;,
+              &quot;7&quot;
+            ],
+            &quot;properties&quot;: {
+              &quot;0&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;minLength&quot;: 1
+              },
+              &quot;1&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;minLength&quot;: 1
+              },
+              &quot;2&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;minLength&quot;: 1
+              },
+              &quot;3&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;minLength&quot;: 1
+              },
+              &quot;4&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;minLength&quot;: 1
+              },
+              &quot;5&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;minLength&quot;: 1
+              },
+              &quot;6&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;minLength&quot;: 1
+              },
+              &quot;7&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;minLength&quot;: 1
+              }
+            }
+          }
+        },
+        &quot;YAML Matrix Chat&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1
+        },
+        &quot;YAML IRC Channel&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1
+        },
+        &quot;YAML News&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1
+        },
+        &quot;YAML Mailing List&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;minLength&quot;: 1
+        },
+        &quot;YAML on GitHub&quot;: {
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;YAML Specs&quot;: {
+              &quot;type&quot;: &quot;string&quot;,
+              &quot;minLength&quot;: 1
+            },
+            &quot;YAML 1.2 Grammar&quot;: {
+              &quot;type&quot;: &quot;string&quot;,
+              &quot;minLength&quot;: 1
+            },
+            &quot;YAML Test Suite&quot;: {
+              &quot;type&quot;: &quot;string&quot;,
+              &quot;minLength&quot;: 1
+            },
+            &quot;YAML Issues&quot;: {
+              &quot;type&quot;: &quot;string&quot;,
+              &quot;minLength&quot;: 1
+            }
+          },
+          &quot;required&quot;: [
+            &quot;YAML Specs&quot;,
+            &quot;YAML 1.2 Grammar&quot;,
+            &quot;YAML Test Suite&quot;,
+            &quot;YAML Issues&quot;
+          ]
+        },
+        &quot;YAML Reference Parsers&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;YAML Test Matrix&quot;: {
           &quot;type&quot;: &quot;string&quot;,
           &quot;minLength&quot;: 1
         }
       },
       &quot;required&quot;: [
-        &quot;key&quot;
+        &quot;YAML Specifications&quot;,
+        &quot;YAML Matrix Chat&quot;,
+        &quot;YAML IRC Channel&quot;,
+        &quot;YAML News&quot;,
+        &quot;YAML Mailing List&quot;,
+        &quot;YAML on GitHub&quot;,
+        &quot;YAML Reference Parsers&quot;,
+        &quot;YAML Test Matrix&quot;
       ]
+    },
+    &quot;YAML Frameworks and Tools&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;C/C++&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;Crystal&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;C#/.NET&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;D&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;Dart&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;Delphi&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;Elixir&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;Erlang&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;Golang&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;Haskell&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;Java&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;JavaScript&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;Nim&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;OCaml&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;Perl Modules&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;PHP&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;Python&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;R&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;Raku&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;Ruby&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;Rust&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;Shell&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;Swift&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        },
+        &quot;Others&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {}
+          }
+        }
+      },
+      &quot;required&quot;: [
+        &quot;C/C++&quot;,
+        &quot;Crystal&quot;,
+        &quot;C#/.NET&quot;,
+        &quot;D&quot;,
+        &quot;Dart&quot;,
+        &quot;Delphi&quot;,
+        &quot;Elixir&quot;,
+        &quot;Erlang&quot;,
+        &quot;Golang&quot;,
+        &quot;Haskell&quot;,
+        &quot;Java&quot;,
+        &quot;JavaScript&quot;,
+        &quot;Nim&quot;,
+        &quot;OCaml&quot;,
+        &quot;Perl Modules&quot;,
+        &quot;PHP&quot;,
+        &quot;Python&quot;,
+        &quot;R&quot;,
+        &quot;Raku&quot;,
+        &quot;Ruby&quot;,
+        &quot;Rust&quot;,
+        &quot;Shell&quot;,
+        &quot;Swift&quot;,
+        &quot;Others&quot;
+      ]
+    },
+    &quot;Related Projects&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;required&quot;: [],
+        &quot;properties&quot;: {}
+      }
     }
   },
   &quot;required&quot;: [
-    &quot;string&quot;,
-    &quot;number&quot;,
-    &quot;boolean&quot;,
-    &quot;object&quot;
+    &quot;YAML&quot;,
+    &quot;What It Is&quot;,
+    &quot;YAML Resources&quot;,
+    &quot;YAML Frameworks and Tools&quot;,
+    &quot;Related Projects&quot;
   ]
-}</textarea></div></div></div><footer class="border-base-300 border-t px-4 py-4 md:px-8"><p class="text-center">© YAML <!-- -->2025</p></footer></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"7uvCYIPorIQr30YPQbbYz","assetPrefix":"/yaml","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script></body></html>
+}</textarea></div></div></div><footer class="border-base-300 border-t px-4 py-4 md:px-8"><p class="text-center">© YAML <!-- -->2025</p></footer></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"G7CMhe7YxfOsOV7CAKWhk","assetPrefix":"/yaml","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script></body></html>
